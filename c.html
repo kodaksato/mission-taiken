@@ -59,6 +59,11 @@ img{max-width:100%;display:block}
 a{color:inherit}
 .wrap{max-width:900px;margin:0 auto;padding:0 18px}
 .center{text-align:center}
+/* 文節単位で折り返す（文の途中で改行させない） */
+.nb{display:inline-block;max-width:100%}
+/* 保護者のイラスト */
+.parents{display:flex;justify-content:center;align-items:flex-end;gap:4px;margin:2px auto 10px;max-width:420px}
+.parents img{width:47%;max-width:180px;height:auto}
 
 .section{padding:30px 0 34px;position:relative;border-radius:32px 32px 0 0;margin-top:-26px;z-index:1}
 .s-blue{background:var(--t-blue)} .s-yellow{background:var(--t-yellow)}
@@ -226,10 +231,10 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
 <section class="hero">
   <div class="wrap">
     <span class="eyebrow">小学1年生〜・未経験OK</span>
-    <h1>「自信がなさそう」を、<br><em>「やってみる！」に変える60分</em></h1>
-    <p class="hlead">パルクールには、&ldquo;正解&rdquo;がないんです。<br>どう越えるかを、自分で考えて決める。<br>その繰り返しが「挑戦する力」を育てます。</p>
+    <h1><span class="nb">「自信がなさそう」を、</span><br><em><span class="nb">「やってみる！」に</span><span class="nb">変える60分</span></em></h1>
+    <p class="hlead"><span class="nb">パルクールには、&ldquo;正解&rdquo;がないんです</span><br><span class="nb">どう越えるかを、自分で考えて決める</span><br><span class="nb">その繰り返しが「挑戦する力」を育てます</span></p>
     <a class="cta" href="https://missionparkour.hacomono.jp/reserve/schedule/3/3?trial=true&utm_source=meta&utm_medium=paid_social&utm_campaign=2026q3_free_trial&utm_content=lp_c" onclick="fbq('track','InitiateCheckout');">まずは無料体験に参加する</a>
-    <p class="cta-note" style="color:#e8f7ff">参加費0円／約60分／しつこい勧誘はありません</p>
+    <p class="cta-note" style="color:#e8f7ff"><span class="nb">参加費0円</span>／<span class="nb">約60分</span>／<span class="nb">しつこい勧誘はありません</span></p>
     <div class="badges"><span>未経験OK</span><span>小学生歓迎</span><span>参加費0円</span></div>
   </div>
 </section>
@@ -240,7 +245,7 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
     <p class="ofmain"><span class="ofplus">＋ 2026 サマーキャンペーン</span>
       入会金 <s>6,000円</s> → <b>0円</b>
     </p>
-    <p class="ofnote">※入会金0円は9月30日までのキャンペーンです（期間中にご入会された方が対象）。<br>※体験レッスンの無料は期間限定ではありません。</p>
+    <p class="ofnote"><span class="nb">※入会金0円は9月30日までのキャンペーンです</span><span class="nb">（期間中にご入会された方が対象）</span><br><span class="nb">※体験レッスンの無料は期間限定ではありません</span></p>
   </div>
 </div>
 
@@ -248,12 +253,16 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
 <section class="section s-yellow">
   <div class="wrap">
     <h2 class="title">こんな風に<span class="u">感じていませんか？</span></h2>
+    <div class="parents">
+      <img src="/parent_mom.png" alt="" width="340" height="485" loading="lazy" />
+      <img src="/parent_dad.png" alt="" width="340" height="448" loading="lazy" />
+    </div>
     <ul class="worry">
-      <li>うちの子、少し自信がなさそう。何かで「できた」を経験させたい</li>
-      <li>習い事はさせたいけど、続くか・合うか不安</li>
-      <li>運動はしてほしい。でも、それ以上に&ldquo;心の成長&rdquo;につながることを</li>
+      <li><span class="nb">うちの子、少し自信がなさそう。</span><span class="nb">何かで「できた」を経験させたい</span></li>
+      <li><span class="nb">習い事はさせたいけど、</span><span class="nb">続くか・合うか不安</span></li>
+      <li><span class="nb">運動はしてほしい。でも、</span><span class="nb">それ以上に&ldquo;心の成長&rdquo;につながることを</span></li>
     </ul>
-    <p class="bridge">その答えのひとつが、パルクールです。</p>
+    <p class="bridge"><span class="nb">その答えのひとつが、</span><span class="nb">パルクールです</span></p>
     <div class="photo"><img src="/kids.jpg" alt="レッスンで笑う子どもたち" loading="lazy" width="1400" height="933" /></div>
   </div>
 </section>
@@ -262,19 +271,19 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
 <section class="section s-blue" id="reserve">
   <div class="wrap center">
     <span class="eyebrow">無料体験</span>
-    <h2 class="title">まずは、<em class="u">「できた！」の瞬間</em>を<br>見にきてください</h2>
+    <h2 class="title"><span class="nb">まずは、<em class="u">「できた！」の瞬間</em>を</span><br><span class="nb">見にきてください</span></h2>
     <div class="info">
       <dl>
         <dt>参加費</dt><dd><span class="free">無料</span></dd>
         <dt>対象</dt><dd>小学1年生〜（メイン：小学生）</dd>
-        <dt>所要時間</dt><dd>約60分（既存クラスの好きなコマを選べます）</dd>
-        <dt>持ち物</dt><dd>室内シューズ（スニーカー・運動靴・体育館シューズOK）／飲み物／タオル／動きやすい服装</dd>
+        <dt>所要時間</dt><dd><span class="nb">約60分</span><span class="nb">（既存クラスの</span><span class="nb">好きなコマを選べます）</span></dd>
+        <dt>持ち物</dt><dd><span class="nb">室内シューズ</span><span class="nb">（スニーカー・</span><span class="nb">運動靴・</span><span class="nb">体育館シューズOK）</span><span class="nb">／飲み物</span><span class="nb">／タオル</span><span class="nb">／動きやすい服装</span></dd>
         <dt>見学</dt><dd>保護者の見学を歓迎しています</dd>
         <dt>場所</dt><dd>東京都江戸川区松江2-27-15</dd>
       </dl>
     </div>
     <a class="cta" href="https://missionparkour.hacomono.jp/reserve/schedule/3/3?trial=true&utm_source=meta&utm_medium=paid_social&utm_campaign=2026q3_free_trial&utm_content=lp_c" onclick="fbq('track','InitiateCheckout');">無料体験を予約する</a>
-    <p class="cta-note">空き枠から日時を選ぶだけ。しつこい勧誘はありません。<br><strong>保護者の見学、歓迎です。</strong></p>
+    <p class="cta-note"><span class="nb">空き枠から日時を選ぶだけ</span><br><span class="nb">しつこい勧誘はありません</span><br><strong>保護者の見学、歓迎です</strong></p>
     <a class="sub" href="https://lin.ee/xoPZ3sl" onclick="fbq('track','Lead');">まずはLINEで相談する</a>
   </div>
 </section>
@@ -283,11 +292,11 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
 <section class="section s-pink">
   <div class="wrap">
     <div class="point"><b>POINT</b><i>1</i></div>
-    <h2 class="title">私たちは、<em class="u">バク転を教えているのではありません</em></h2>
+    <h2 class="title"><span class="nb">私たちは、</span><em class="u"><span class="nb">バク転を</span><span class="nb">教えているのではありません</span></em></h2>
     <div class="state">
       <p>パルクール教室というと、バク転やアクロバットを想像されると思います。でも、私たちが本当にお子さんに届けたいのは、技そのものではありません。</p>
       <p>体操には技の正解があります。でもパルクールには、正解がないんです。目の前の障害物をどう越えるか、自分で考えて、決めて、挑戦する。この繰り返しが、どんな時代・どんな人生でも必要になる「挑戦する力」を育てます。</p>
-      <div class="pos">体操教室は&ldquo;身体&rdquo;を育てる場所。学習塾は&ldquo;知識&rdquo;を育てる場所。<em>パルクール教室は、人生を切り拓く力を育てる場所です。</em></div>
+      <div class="pos"><span class="nb">体操教室は&ldquo;身体&rdquo;を育てる場所</span><br><span class="nb">学習塾は&ldquo;知識&rdquo;を育てる場所</span><em><span class="nb">パルクール教室は、</span><span class="nb">人生を切り拓く力を育てる場所</span></em></div>
     </div>
   </div>
 </section>
@@ -295,7 +304,7 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
 <!-- 動画: ページの一部として全幅で流れる -->
 <div class="filmstrip">
   <video id="lessonvid" muted loop playsinline preload="none" poster="/lesson-poster.jpg"></video>
-  <p class="filmcap"><b>これが、MISSIONのレッスンです。</b>答えを教えるのではなく、子ども自身に考えてもらいます。</p>
+  <p class="filmcap"><b>これが、MISSIONのレッスンです</b><span class="nb">答えを教えるのではなく、</span><span class="nb">子ども自身に考えてもらいます</span></p>
 </div>
 
 <!-- 5. POINT 2 -->
@@ -309,7 +318,7 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
       <div class="card"><div class="ico" aria-hidden="true">💡</div><h3>思考能力</h3><p>判断力、問題解決力、創造力、適応力</p></div>
       <div class="card"><div class="ico" aria-hidden="true">🤝</div><h3>社会性</h3><p>コミュニケーション、協調性、思いやり</p></div>
     </div>
-    <p class="lead" style="margin-top:14px">この4つを一度に鍛えられる習い事は、そう多くありません。</p>
+    <p class="lead" style="margin-top:14px"><span class="nb">この4つを一度に鍛えられる習い事は、</span><span class="nb">そう多くありません</span></p>
   </div>
 </section>
 
@@ -318,7 +327,7 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
   <div class="wrap">
     <div class="point"><b>POINT</b><i>3</i></div>
     <h2 class="title">&ldquo;監修&rdquo;ではなく、<br><em class="u">本人が教えます</em></h2>
-    <p class="lead">日本チャンピオン、国際大会メダリスト、日本選手権の公式ジャッジ。その選手たちが、実際にレッスンを担当します。</p>
+    <p class="lead"><span class="nb">日本チャンピオン、</span><span class="nb">国際大会メダリスト、</span><span class="nb">日本選手権の公式ジャッジ</span><br><span class="nb">その選手たちが、</span><span class="nb">実際にレッスンを担当します</span></p>
     <div class="coachscroll">
       <div class="coaches">
         <div class="coach"><img src="/coach_yuutarou_web.jpg" alt="コーチ ゆうたろう" width="88" height="88" loading="lazy" /><span class="cn">ゆうたろう</span><span class="ct">日本パルクール界のパイオニア</span></div>
@@ -334,8 +343,8 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
 <!-- 7. できるようになる -->
 <section class="section s-green">
   <div class="wrap">
-    <h2 class="title">「できない」が、<em class="u">「できた」に変わる瞬間</em></h2>
-    <p class="lead">一人ひとりのレベルに合わせて進めます。未経験でも大丈夫です。</p>
+    <h2 class="title"><span class="nb">「できない」が、</span><em class="u"><span class="nb">「できた」に</span><span class="nb">変わる瞬間</span></em></h2>
+    <p class="lead"><span class="nb">一人ひとりのレベルに合わせて進めます</span><br><span class="nb">未経験でも大丈夫です</span></p>
     <div class="photo"><img src="/vault.jpg" alt="障害物を越える子ども" loading="lazy" width="1400" height="933" /></div>
     <div class="stripscroll" tabindex="0" role="group" aria-label="レッスンの様子（横にスクロールできます）">
       <div class="strip">
@@ -376,10 +385,10 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
           <p>「先生が丁寧に教えてくれるので、安全に楽しく続けています。障害物も色々あり、初心者も上級者も練習できるスペースです！」</p>
         </div>
     </div>
-    <p class="pnote">※Googleマップ ★4.6（95件）より抜粋　←→ 横にスクロールできます</p>
+    <p class="pnote"><span class="nb">※Googleマップ ★4.6（95件）より抜粋</span><br><span class="nb">←→ 横にスクロールできます</span></p>
     <div class="safety">
-      <div><b>未経験・運動が苦手でもOK</b><br>一人ひとりのレベルに合わせて進めます。公認心理師の資格を持つコーチも在籍しています</div>
-      <div><b>安全第一の設計</b><br>国内最大規模の専用施設。マット・スポンジピット完備。受け身と着地から学びます</div>
+      <div><b>未経験・運動が苦手でもOK</b><br><span class="nb">一人ひとりのレベルに合わせて進めます</span><br><span class="nb">公認心理師の資格を持つコーチも</span><span class="nb">在籍しています</span></div>
+      <div><b>安全第一の設計</b><br><span class="nb">国内最大規模の専用施設</span><br><span class="nb">マット・スポンジピット完備</span><br><span class="nb">受け身と着地から学びます</span></div>
     </div>
   </div>
 </section>
@@ -388,15 +397,15 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
 <section class="section s-white">
   <div class="wrap">
     <h2 class="title">料金について</h2>
-    <p class="lead">レッスンは月4回と月8回から選べます。単発で1回だけの参加もできます。</p>
+    <p class="lead"><span class="nb">レッスンは月4回と月8回から選べます</span><br><span class="nb">単発で1回だけの参加もできます</span></p>
     <div class="price">
       <div class="row hl"><span>体験レッスン</span><b>無料</b></div>
       <div class="row"><span>月謝／月4回コース</span><b>12,000円</b></div>
       <div class="row"><span>月謝／月8回コース</span><b>20,000円</b></div>
-      <div class="row"><span>レッスン 1回<br>（単発・追加レッスン）</span><b>4,000円</b></div>
-      <div class="row hl"><span>入会金<br>2026サマーキャンペーン（9/30まで）</span><b><s>6,000円</s> → 0円</b></div>
+      <div class="row"><span><span class="nb">レッスン 1回</span><br><span class="nb">（単発・追加レッスン）</span></span><b>4,000円</b></div>
+      <div class="row hl"><span><span class="nb">入会金</span><br><span class="nb">2026サマーキャンペーン（9/30まで）</span></span><b><s>6,000円</s> → 0円</b></div>
     </div>
-    <p class="pnote">※料金はすべて税込です。<br>※入会金0円はキャンペーン期間中にご入会された方が対象です。</p>
+    <p class="pnote"><span class="nb">※料金はすべて税込です</span><br><span class="nb">※入会金0円は</span><span class="nb">キャンペーン期間中にご入会された方が</span><span class="nb">対象です</span></p>
 
     <h2 class="title" style="margin-top:26px">よくあるご質問</h2>
     <div class="faq">
@@ -408,16 +417,18 @@ footer{background:var(--blued);color:#fff;text-align:center;padding:18px 20px;fo
 
     <div class="center">
       <h2 class="title">まずは、<em class="u">無料体験から</em></h2>
-      <p class="lead">「自信がなさそう」を、「やってみる！」に変える60分を。</p>
+      <p class="lead"><span class="nb">「自信がなさそう」を、</span><span class="nb">「やってみる！」に変える60分を</span></p>
       <a class="cta" href="https://missionparkour.hacomono.jp/reserve/schedule/3/3?trial=true&utm_source=meta&utm_medium=paid_social&utm_campaign=2026q3_free_trial&utm_content=lp_c" onclick="fbq('track','InitiateCheckout');">無料体験を予約する</a>
-      <p class="cta-note">空き枠から日時を選ぶだけ。しつこい勧誘はありません。</p>
+      <p class="cta-note"><span class="nb">空き枠から日時を選ぶだけ</span><br><span class="nb">しつこい勧誘はありません</span></p>
     </div>
   </div>
 </section>
 
 <footer>
-  MISSION PARKOUR PARK TOKYO ／ 東京都江戸川区松江2-27-15 ／ 株式会社PKM<br>
-  TEL 03-5879-2291（営業時間内）／ 定休日 毎週火曜日 ／ © PKM Co., Ltd.
+  <span class="nb">MISSION PARKOUR PARK TOKYO</span><br>
+  <span class="nb">東京都江戸川区松江2-27-15</span><span class="nb">／株式会社PKM</span><br>
+  <span class="nb">TEL 03-5879-2291（営業時間内）</span><br>
+  <span class="nb">定休日 毎週火曜日</span><span class="nb">／© PKM Co., Ltd.</span>
 </footer>
 
 <div class="sticky-cta">
